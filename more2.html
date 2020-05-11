@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>eMandi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+    .row1
+    {
+      height: 550px;
+      border-radius: 50px;
+      min-height: 100vh;
+      background-color: #3DED97;
+
+    }
+
+    .row2
+    {
+      height: 600px;
+       min-height: 100vh;
+    }
+
+
+.circle {
+    background: white;
+    border-radius: 100px;
+    color: black;
+    height: 80px;
+    /*font-weight: bold;*/
+    width: 80px;
+    display: table;
+    margin: 10px auto;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+ }
+
+.round1, .round2, .round3, .round4, .round5, .round6{
+    background: white;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .topnav {
+  overflow: hidden;
+ 
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: table;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+.icon
+{
+  display: inline-block;
+}
+
+/*.active {
+  background-color: #4CAF50;
+  color: white;
+}*/
+
+  </style>
+
+
+</head>
+
+<body>
+  
+  <div class="container-fluid col-md-3 ">
+      <div class="row1">
+                
+        <div class="circle">                      
+            <a href="#home"><img src="logo.png" height="90" width="90"/></a></div><br><br><br><br><br><br><br>
+            <div id="myLinks">
+            <div class="round1">
+              <a href="#customers">Customers</a></div><br><br>
+              <div class="round2">
+              <a href="#suppliers">Suppliers</a></div><br><br>
+              <div class="round3">
+              <a href="#sales">Sales</a></div><br><br>
+              <div class="round4">
+              <a href="#purchase">Purchase</a></div><br><br>
+              <div class="round5">
+              <a href="#products">Products</a></div><br><br>
+              <div class="round6">
+              <a href="#report">Report</a></div><br><br>
+              </div>
+              
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    </div>
+
+  </div>
+
+</div>
+
+ <div class="container-fluid col-md-9">
+ 
+  <div class="row2">  
+   
+       <nav class="navbar  navbar-expand-md bg-primary text-dark" >
+       <div class="navbar-header">
+    <a class="navbar-brand bg-primary text-dark" href="#">Dashboard</a>
+ 
+    </div>
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="setting.html"><img src="setting.jpg"></a></li>
+      <li><a href="notification.html"><img src="bell2.jpg"></a></li>
+      <li><a href="login.html"><img src="login.jpg"></a></li>
+    </ul>
+    </nav>
+   
+   </div> 
+  </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+</script>
+</body>
+</html>
+
+   
